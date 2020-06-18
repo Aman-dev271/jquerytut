@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordions in the jquery ui </title>
+    <link rel="stylesheet" href="jquith/jquery-ui.css">
+    <link rel="stylesheet" href="jquith/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jquith/jquery-ui.theme.css">
+
+</head>
+<body>
+
+    
+<div id="Accordions">
+    <h3>this is our pehra no1</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At eaque iusto dolorum? Assumenda quibusdam porro animi dolorem perspiciatis sapiente non rerum cupiditate debitis deleniti itaque at possimus ducimus, dicta fuga illum autem unde ipsa!</p>
+
+    <h3>this is our pehra no2</h3>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <h3>this is our pehra no3</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum velit, cumque dignissimos delectus expedita explicabo adipisci facere, quos unde, repellendus minus! Maiores, dolores reprehenderit? Possimus dignissimos rem quae magnam architecto, voluptatibus saepe ducimus quo voluptate eius optio eveniet ab excepturi porro laboriosam. Odio voluptas voluptatum modi aperiam quo, minima amet ducimus explicabo nisi dolorem quos ab dolores laborum dolorum, non nobis facere deserunt numquam! Eos provident illo dolor aperiam veritatis sapiente soluta magnam dolorem, quae quaerat suscipit labore odio iusto perspiciatis quia est perferendis harum ea voluptatum explicabo numquam iure! Ipsa hic, eum consectetur aut fugit architecto unde earum et saepe fugiat nulla repellendus quia atque maxime aperiam incidunt dolore officiis, doloribus mollitia voluptatum similique corporis quo distinctio. Velit aliquam ea illo delectus obcaecati distinctio quidem eius excepturi vel? Inventore quisquam consectetur rerum optio at, soluta iure eum totam dolorem. Sit, et atque! Esse facilis temporibus cupiditate, ut cum blanditiis quod nemo amet consectetur possimus doloribus voluptatem repellat reiciendis voluptatum veniam? Illum, accusamus soluta. Dolore repellat quasi deleniti, tempore sequi rem quo laudantium, vel dolores doloribus tempora veniam sed voluptates repudiandae, eligendi facere delectus itaque hic quibusdam nobis. Eveniet obcaecati mollitia harum cum sequi deleniti. Amet accusantium incidunt aut ipsam inventore totam ipsa ducimus quo est officia temporibus nisi sit optio eius delectus, sint rem nam, unde cum? Ad, dignissimos. Nisi, porro ut.</p>
+    <h3>this is our pehra no4</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem temporibus numquam harum pariatur amet iste ipsa repellat, saepe odit accusamus dolorum, obcaecati tenetur sapiente est, neque minima debitis! Consequuntur iste blanditiis vel suscipit optio provident hic temporibus reiciendis id ipsum. Qui labore ratione nostrum itaque.</p>
+</div>
+
+    <script src="jscdn/jquery.js"></script>
+    <script src="jquith/jquery-ui.js"></script>
+    <script>
+        $("#Accordions").accordion({
+            collapsible:true,
+            event:"mouseover",
+            animate:3000,
+            active:1,
+            heightStyle:true,
+            icons:{header:" ui-icon-arrowstop-1-e",activeHeader:"ui-icon-arrowstop-1-s"}
+
+        });
+        
+    </script>
+</body>
+</html>

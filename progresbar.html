@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tooltip in the jquery ui </title>
+    <link rel="stylesheet" href="jqui1/jquery-ui.css">
+    <link rel="stylesheet" href="jqui1/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jqui1/jquery-ui.theme.css">
+
+</head>
+<body>
+
+    
+<div id="tooltip">
+    
+    
+</div>
+<button id="btn1">set themeClass</button>
+<button id="btn">check themeClass</button>
+
+    <script src="jscdn/jquery.js"></script>
+    <script src="jqui1/jquery-ui.js"></script>
+    <script>
+        $( "#tooltip" ).progressbar("destroy"
+            
+//             {
+//                 // value:400,
+//                 // // disabled: true,
+//                 // max: 1024,
+               
+
+  
+// }
+
+  
+);
+$("#btn1").click(function(){
+  
+   var seting = $("#tooltip").progressbar("option","classes.ui-progressbar" , "highlight");
+});
+
+$("#btn").click(function(){
+    var themeClass = $( "#tooltip" ).progressbar( "option", "classes.ui-progressbar" );
+alert(themeClass);
+});
+
+        </script>
+       
+   
+</body>
+</html>

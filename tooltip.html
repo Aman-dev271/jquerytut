@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tooltip in the jquery ui </title>
+    <link rel="stylesheet" href="jqui1/jquery-ui.css">
+    <link rel="stylesheet" href="jqui1/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jqui1/jquery-ui.theme.css">
+
+</head>
+<body>
+
+    
+<div id="tooltip">
+    <p>there is your calander</p>
+    <img  id="imag" src="image/logo1.png" alt="tooltip" title="" >
+    
+</div>
+
+    <script src="jscdn/jquery.js"></script>
+    <script src="jqui1/jquery-ui.js"></script>
+    <script>
+        $("#imag").tooltip({
+            content:"this is about our image",
+            // show:{effect:"explode" ,duration:3000},
+            // show:{effect:"bounce" ,duration:3000},
+            // show:{effect:"pulsate" ,duration:3000},
+            show:{effect:"highlight" ,duration:3000},
+            // show:{effect:"blind" ,duration:3000},
+            hide:{effect:"explode" ,duration:3000}
+        });
+       
+    </script>
+</body>
+</html>

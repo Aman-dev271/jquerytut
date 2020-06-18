@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>how to attach our jquery ui files with the html webpage</title>
+    <link rel="stylesheet" href="aman/jquery-ui.css">
+    <link rel="stylesheet" href="aman/jquery-ui.structure.css">
+    <link rel="stylesheet" href="aman/jquery-ui.theme.css">
+    
+<body>
+    <input type="text " id="aman" placeholder="your name">
+    <script src="jscdn/jquery.js"></script>
+    <script src="aman/jquery-ui.js"></script>
+    <script>
+        // let name =["aman","deep","singh","singh",'amandeep','singh'] ; 
+         $("#aman").autocomplete({
+            // source:name
+            source:["aman","deep","singh","singh",'amandeep','singh']
+            
+         },{
+             autoFocus : true,
+            //  delay:3000,
+            minLength :2,
+         });
+    </script>
+</body>
+</html>

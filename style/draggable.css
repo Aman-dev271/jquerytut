@@ -1,0 +1,17 @@
+#div1{
+    height:150px;
+    width:200px;
+    background-color: aqua;
+    text-align: center;
+    padding-top: 75px;
+    z-index: 4;
+}
+.div1{
+    height:150px;
+    width:200px;
+    background-color:red;
+    text-align: center;
+    padding-top: 75px;
+    margin-top:20px;
+    z-index: 2;
+}

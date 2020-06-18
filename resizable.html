@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>how to use resizeable intraction in the jquery ui</title>
+    <!-- <link rel="stylesheet" href="style/resizeable.css"> -->
+    <link rel="stylesheet" href="aman/jquery-ui.css">
+    <link rel="stylesheet" href="aman/jquery-ui.structure.css">
+    <link rel="stylesheet" href="aman/jquery-ui.theme.css">
+    <style>
+        .sort{
+            height:150px;
+            width:150px;
+            background-color:red;
+        }
+    </style>
+    <script src="jscdn/jquery.js"></script>
+    <script src="aman/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#div").sortable({
+            opacity:0.5,
+            distance:100,
+            // delay:200,
+            containment:"document",
+            cursor:'grabbing',
+        })
+        });
+    </script>
+</head>
+<body>
+    <div id="div">
+        <div class="sort"  >
+            <h3>i am 1st</h3>
+            <h3>i am 3st</h3>
+            <h3>i am 4st</h3>
+        </div>
+            <div class="sort">
+                <h3>i am 2nd </h3></div>
+                <div class="sort"><h3>i am 3rd</h3></div>
+                </div>
+    
+</body>
+</html>

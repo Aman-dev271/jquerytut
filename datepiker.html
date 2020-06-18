@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>datepicker in the jquery ui </title>
+    <link rel="stylesheet" href="jquith/jquery-ui.css">
+    <link rel="stylesheet" href="jquith/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jquith/jquery-ui.theme.css">
+
+</head>
+<body>
+
+    
+<div id="date">
+    <p>there is your calander</p>
+    your DOB:<input type="text" placeholder="your DOB" ID="AMAN">
+</div>
+
+    <script src="jscdn/jquery.js"></script>
+    <script src="jquith/jquery-ui.js"></script>
+    <script>
+        $("#AMAN").datepicker({
+            numberOfMonths:1,
+            changeYear:true,
+            changeMonth:true,
+            showWeek:true,
+            showOtherMonths:true,
+            minDate :new Date(2012 ,0,2),
+            maxDate :new Date(2020 , 11,3),
+        });
+    </script>
+</body>
+</html>

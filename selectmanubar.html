@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tooltip in the jquery ui </title>
+    <link rel="stylesheet" href="jqui1/jquery-ui.css">
+    <link rel="stylesheet" href="jqui1/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jqui1/jquery-ui.theme.css">
+
+<style>
+    fieldset {
+      border: 0;
+      color:red;
+    }
+    label {
+      display: block;
+      margin: 30px 0 0 0;
+      color:red;
+    }
+    .overflow {
+      height: 100px;
+      background-color:pink;
+    }
+  </style>
+  <script src="jscdn/jquery.js"></script>
+  <script src="jqui1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#speed" ).selectmenu();
+ 
+    $( "#files" ).selectmenu();
+ 
+    $( "#number" )
+      .selectmenu()
+      // .selectmenu( "menuWidget" )
+        .addClass( "overflow" );
+ 
+    $( "#salutation" ).selectmenu();
+  } );
+  </script>
+</head>
+<body>
+ 
+<div class="demo">
+ 
+<form action="#">
+ 
+ 
+    <label for="speed">Select a speed</label>
+    <select name="speed" id="speed">
+      <option>Slower</option>
+      <option>Slow</option>
+      <option selected="selected">Medium</option>
+      <option>Fast</option>
+      <option>Faster</option>
+    </select>
+ 
+    <label for="files">Select a file</label>
+    <select name="files" id="files">
+      <optgroup label="Scripts">
+        <option value="jquery">jQuery.js</option>
+        <option value="jqueryui">ui.jQuery.js</option>
+      </optgroup>
+      <optgroup label="Other files">
+        <option value="somefile">Some unknown file</option>
+        <option value="someotherfile">Some other file with a very long option text</option>
+      </optgroup>
+    </select>
+ 
+    <label for="number">Select a number</label>
+    <select name="number" id="number">
+      <option>1</option>
+      <option selected="selected">2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+ 
+    <label for="salutation">Select a title</label>
+    <select name="salutation" id="salutation">
+      <option disabled selected>Please pick one</option>
+      <option>Mr.</option>
+      <option>Mrs.</option>
+      
+    </select>
+
+ 
+</form>
+ 
+</div>
+ 
+ 
+</body>
+</html>
